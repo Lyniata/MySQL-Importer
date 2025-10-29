@@ -46,7 +46,7 @@ def dataimporter(csv_path, host, user, password, database, table_name):
         if connection.is_connected():
             cursor.close()
             connection.close()
-            print("🔌 MySQL connection closed.")
+            print("MySQL connection closed.")
 
     return True
 
