@@ -1,11 +1,10 @@
-# MySQL-Importer
-A simple utility for cleaning and importing financial data from an Excel .xlsm spreadsheet into a MySQL database. This tool automates the process of extracting data from a formatted workbook, preprocessing it with pandas, and uploading it to a structured SQL table.
+# CSV Data Cleaner & MySQL Importer
+A simple Python tool to clean CSV files and import them into MySQL.
 
 ## Features
-- Reads data from a specific Excel sheet (TRANSACTIONS)
-- Cleans and formats dates and missing values
-- Creates MySQL table if it doesn't exist
-- Bulk inserts data into MySQL
+- Cleans CSV data: removes empty rows and converts Date columns to YYYY-MM-DD.
+- Imports cleaned CSV into MySQL, creating tables automatically.
+- Stops workflow if cleaning fails and provides clear error messages.
 
 ## Requirements
 - Python 3.7+
@@ -14,4 +13,3 @@ A simple utility for cleaning and importing financial data from an Excel .xlsm s
 ## Python packages
 - pandas
 - mysql-connector-python
-- openpyxl or xlrd (for reading Excel files)
