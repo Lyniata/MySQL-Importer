@@ -8,7 +8,6 @@ def dataimporter(csv_path, host, user, password, database, table_name):
     try:
         df = pd.read_csv(csv_path)
 
-        # Connect to MySQL
         connection = mysql.connector.connect(
             host=host,
             user=user,
